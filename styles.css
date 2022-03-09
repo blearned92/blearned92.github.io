@@ -1,6 +1,11 @@
+body {
+    width: 100%;
+}
+
 .wip {
     background-color: rgba(255, 255, 0, 0.562);
-    border: 5px solid rgba(0, 0, 0, 0.979);
+    border-top: 5px solid rgba(0, 0, 0, 0.979);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.979);
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6em;
     padding: 0px 5px;
@@ -8,5 +13,11 @@
     text-align: center;
     text-shadow: 2px 2px 3px #666;
     top: 0px;
-    right: 10px;
+    left: -0.5%;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 70px;
 }
