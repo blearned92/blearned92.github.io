@@ -1,5 +1,7 @@
 body {
     width: 100%;
+    position: relative;
+    top: 70px;
 }
 
 .wip {
@@ -18,6 +20,24 @@ body {
 }
 
 header {
-    position: relative;
-    top: 70px;
+    text-align: center;
 }
+.container {
+    align-items: center;
+    background-color: dodgerblue;
+    display: flex;
+    min-height: 125px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+.container-item {
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    width: 200px;
+    height: 100px;
+    margin: 8px;
+}
+
