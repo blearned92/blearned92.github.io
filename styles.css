@@ -1,7 +1,8 @@
 body {
+    position: relative; /*only needed because WIP banner */
+    top: 70px; /*only needed because WIP banner */
     width: 100%;
-    position: relative;
-    top: 70px;
+    margin: 0px;
 }
 
 .wip {
@@ -19,14 +20,21 @@ body {
     width: 100%;
 }
 
+/* 
+1. Need text decoration
+2. Need nav bar
+3. Need image decoration
+*/
+
 header {
     text-align: center;
 }
 .container {
+    margin: 0 auto;
     align-items: center;
     background-color: dodgerblue;
     display: flex;
-    min-height: 125px;
+    flex: 1 1 1200px;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px;
