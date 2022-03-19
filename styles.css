@@ -47,5 +47,17 @@ header {
     width: 200px;
     height: 100px;
     margin: 8px;
+    align-content: center;
+    justify-content: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #666;
 }
 
