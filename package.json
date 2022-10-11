@@ -1,4 +1,5 @@
 {
+  "homepage": "http://blearned92.github.io",
   "name": "blearned92.github.io",
   "version": "0.1.0",
   "private": true,
@@ -36,11 +37,13 @@
       "not dead",
       "not op_mini all"
     ],
-    "development": [
+    "development" : [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
   },
-  "homepage": "http://blearned92.github.io"
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
