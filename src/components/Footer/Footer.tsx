@@ -12,17 +12,15 @@ const Wrapper = styled.div`
 `;
 
 const Link = styled.div`
-    display: flex;
-    display: flex;
     margin: 5px;
     cursor: pointer;
+    width: 40px;
 `;
 
-const Logo = styled.img``;
-
-const LinkTitle = styled.p`
-    display: flex;
-    align-self: flex-end;
+const Logo = styled.img`
+    height: 100%;
+    width: 100%;
+    padding-right: 100%;
 `;
 
 
@@ -33,7 +31,7 @@ const Footer = () => {
                 <Logo src={String("https://cdn-icons-png.flaticon.com/512/25/25231.png")}/>
             </Link>
             <Link onClick={() => window.open("https://www.linkedin.com/in/brandon-learned/")}>
-                <Logo src={String("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png")}/>
+                <Logo src={String("https://rmutrecht.org/wp-content/uploads/sites/259/2017/10/LinkedIn-Logo-500x500.png")}/>
             </Link>
         </Wrapper>
     )

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import PokeBall from '../../images/PokeBall.png';
+import { ProjectsContext } from "../../context/Projects.context";
 
 const Container = styled.div`
     margin: 0 5rem;
@@ -59,33 +59,21 @@ const ProjectLink = styled.p`
 
 const Portfolio = () => {
 
-    interface IFrontEnd {
-        title: String,
-        imageLink: String,
-        githubLink: String
-    }
-
+    const { Projects, setProjects } = useContext(ProjectsContext); //Made a context, because I may want to add a db later on
     const navigate = useNavigate();
-    const frontEndArray = [{
-        title:"PokeAPI",
-        imageLink:"../../images/PokeBall.png", 
-        githubLink:"https://github.com/blearned92/MonkeyBusiness"}
-    ];
     
     return (
         <Container>
             <Title>Project Catalog</Title>
-            <Project>
-                <ProjectTitle onClick={() => {navigate("/projectPokeAPI")}}>PokeAPI</ProjectTitle>
-                <ProjectImage src={String(PokeBall)}/>
-                <ProjectLink onClick={() => window.open("https://github.com/blearned92/MonkeyBusiness")}>Check Out The GitHub!</ProjectLink>
-            </Project>
-            <Project>Project2</Project>
-            <Project>Project3</Project>
-            <Project>Project4</Project>
-            <Project>Project5</Project>
-            <Project>Project6</Project>
-            
+            {
+                Projects.map((ProjectItem)=>(
+                    <Project>
+                        <ProjectTitle onClick={() => window.location.href=String(ProjectItem.titleLink)}>{ProjectItem.title}</ProjectTitle>
+                        <ProjectImage src={String(ProjectItem.imageLink)} onClick={() => window.location.href=String(ProjectItem.titleLink)}/>
+                        <ProjectLink onClick={() => window.open(String(ProjectItem.githubLink))}>Check Out The GitHub!</ProjectLink>
+                    </Project>
+                ))
+            }            
         </Container>
     )
 }
