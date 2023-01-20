@@ -1,20 +1,18 @@
 import styled from "styled-components";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Color } from "../../common/colors";
 
 const Wrapper = styled.div`
-    background-color: #3b036e;
+    background-color: ${Color.secondaryColor};
     position: fixed;
     display: flex;
     bottom: 0;
     width: 100%;
     height: 6%;
     justify-content: right;
-`;
-
-const Link = styled.div`
-    margin: 5px;
-    cursor: pointer;
-    width: 40px;
+    align-items: center;
 `;
 
 const Logo = styled.img`
@@ -23,16 +21,18 @@ const Logo = styled.img`
     padding-right: 100%;
 `;
 
+const FooterIcon = styled(FontAwesomeIcon)`
+    color: ${Color.fontPrimary};
+    height: 60%;
+    padding-right: 10px;
+    cursor: pointer;
+`
 
 const Footer = () => {
     return(
         <Wrapper>
-            <Link onClick={() => window.open("https://github.com/blearned92/")}>
-                <Logo src={String("https://cdn-icons-png.flaticon.com/512/25/25231.png")}/>
-            </Link>
-            <Link onClick={() => window.open("https://www.linkedin.com/in/brandon-learned/")}>
-                <Logo src={String("https://rmutrecht.org/wp-content/uploads/sites/259/2017/10/LinkedIn-Logo-500x500.png")}/>
-            </Link>
+            <FooterIcon icon={faLinkedin} onClick={() => window.open("https://www.linkedin.com/in/brandon-learned/")}/>
+            <FooterIcon icon={faGithub} onClick={() => window.open("https://github.com/blearned92/")}/>
         </Wrapper>
     )
 }

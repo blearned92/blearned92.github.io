@@ -1,24 +1,21 @@
 import styled from 'styled-components';
 import Sprite from '../../images/Sprite.png';
+import "../../common/colors.scss";
 
 const Container = styled.div`
-    background-color: #3b035e;
     display: flex;
     justify-content: center;
 `;
 
 const BannerImage = styled.img`
-    width: 10rem;
-    margin: 1rem;
+    width: 7rem;
     border-radius: 100%;
     background-color: purple;
 `;
 
 const Banner = () => {
     return (
-        <Container>
-            <BannerImage src={String(Sprite)}/>
-        </Container>
+        <BannerImage src={String(Sprite)}/>
     )
 }
 

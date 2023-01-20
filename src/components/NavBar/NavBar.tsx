@@ -2,35 +2,18 @@ import { useNavigate } from "react-router-dom";
 import React from 'react';
 import styled from "styled-components";
 import Banner from "../Banner/Banner";
+import {Color} from '../../common/colors';
 
 const Wrapper = styled.div`
-  @media(max-width: 768px){
-    display: flex;
-  }
-`;
-
-const Top = styled.div`
-  @media(max-width: 768px){
-    display: flex;
-    order: 2;
-    justify-content: right;
-    border-left: 2px solid black;
-    border-bottom: 1px solid black;
-  }
-`;
-
-const Bottom = styled.div`
-  width: 100%;
-  @media(max-width: 768px){
-    display: flex;
-    order: 1;
-  }
+  // @media(max-width: 768px){
+  //   display: flex;
+  // }
 `;
 
 const Container = styled.div`
-  background-color: #3b036e;
+  background-color: ${Color.secondaryColor};
   display: flex;
-  border-top: 2px solid black;
+  justify-content: center;
   font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
   font-stretch: expanded;
   @media(max-width: 768px){
@@ -41,27 +24,8 @@ const Container = styled.div`
   }
 `;
 
-const MenuItem = styled.div`  
-  font-size: 1.2em;
-  width: 6rem;
-  text-align: center;
-  padding: 0.8rem;
-  cursor: pointer;
-  border-right: 1px solid black;
-  @media(max-width: 768px){
-    border-right: 2px solid black;
-    border-bottom: 1px solid black;
-    width: 100%;
-    padding: .8rem 0;
-  }
-  &:hover {
-    background-color: #590a8b;
-  }
-`;
-
-const Logo = styled.div`
-  background-color: #590a5b;
-  text-decoration: underline;
+const Title = styled.h1`
+  background-color: ${Color.tetriaryColor};
   padding: .8rem;
   font-size: 1.2em;
   text-align: center;
@@ -76,24 +40,60 @@ const Logo = styled.div`
   }
 `;
 
+const MenuItem = styled.div` 
+  writing-mode:vertical-rl; 
+  font-size: 1.2em;
+  width: 6rem;
+  text-align: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-right: 1px solid black;
+  @media(max-width: 768px){
+    // border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: .8rem 0;
+  }
+  &:hover {
+    background-color: ${Color.hoverColor};
+  }
+`;
+
+const LeadItem = styled(MenuItem) `
+  border-left: 1px solid black;
+`;
+
+// const Bottom = styled.div`
+//   width: 100%;
+//   @media(max-width: 768px){
+//     display: flex;
+//     order: 1;
+//   }
+// `;
+
+// const Top = styled.div`
+//   @media(max-width: 768px){
+//     display: flex;
+//     order: 2;
+//     justify-content: right;
+//     border-left: 2px solid black;
+//     border-bottom: 1px solid black;
+//   }
+// `;
+
 const NavBar = () => {
     const navigate = useNavigate();
 
     return (
-      <Wrapper>
-        <Top>
-          <Banner/>
-        </Top>
-        <Bottom>
+      // <Wrapper>
           <Container>
-              <Logo>BrandonLearned.com</Logo>
-              <MenuItem onClick={() => {navigate("/")}}>Home</MenuItem>
+              <LeadItem onClick={() => {navigate("/")}}>Home</LeadItem>
               <MenuItem onClick={() => {navigate("/about")}}>About</MenuItem>
-              <MenuItem onClick={() => {navigate("/portfolio")}}>Portfolio</MenuItem>
-          </Container>
-        </Bottom>
-          
-      </Wrapper>
+              <Title> <Banner/> </Title>
+              <MenuItem onClick={() => {navigate("/portfolio")}}>Projects</MenuItem>
+              <MenuItem>Skills</MenuItem>
+          </Container>          
+      // </Wrapper>
         
     );
     
