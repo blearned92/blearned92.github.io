@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import React from 'react';
 
 import Container from 'react-bootstrap/Container';
@@ -10,12 +9,15 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Sprite from '../../images/Sprite.png';
 import "./NavBar.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function NavBar() {
   let expand = "md";
+  
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand={expand} className="mb-3">
+      <Navbar bg="dark" variant="dark" expand={expand} className="mb-3 fixed">
           <Container fluid>
             <Navbar.Brand className="title" href="#home">
               <img
@@ -40,10 +42,10 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body className="dark">
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#">About Me</Nav.Link>
-                  <Nav.Link href="#">Technologies</Nav.Link>
-                  <Nav.Link href="#">Projects</Nav.Link>
-                  <Nav.Link href="#">Contact Me</Nav.Link>
+                  <Nav.Link href="#about-me">About Me</Nav.Link>
+                  <Nav.Link href="#technologies">Technologies</Nav.Link>
+                  <Nav.Link href="#projects">Projects</Nav.Link>
+                  <Nav.Link href="#contact-me">Contact Me</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

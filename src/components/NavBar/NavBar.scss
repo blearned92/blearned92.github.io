@@ -9,7 +9,12 @@ border-radius: 100%;
 margin-right: .4rem;
 }
 
-/* Menu Links */ 
+.fixed {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+}
+ 
 .nav-link {
     border-top: .1875rem solid rgba(33, 37, 41, 1);
     letter-spacing: 0.6px;

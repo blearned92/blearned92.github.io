@@ -21,7 +21,7 @@ const Technologies = () => {
 
 
     return (
-        <section className="technologies">
+        <section className="technologies" id="technologies">
             <h2 className="technologies-h2">Technologies:</h2>
             <aside className="top">
                 {Texts.technologies}

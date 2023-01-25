@@ -5,7 +5,7 @@ import Sprite from '../../images/Sprite.png';
 
 const About = () => {
     return (
-        <section className="about">
+        <section className="about" id="about-me">
             <h2 className="about-h2">About me:</h2>
             <aside className="left box">
                 {Texts.aboutMe}
