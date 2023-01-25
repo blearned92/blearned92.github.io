@@ -1,0 +1,61 @@
+@import "../../common/colors.scss";
+
+.technologies {
+    display: grid;
+    grid-template-rows: 55px 1fr 5fr;
+    margin: 3% 0;
+    background-color: $tetriary-transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.technologies-h2 {
+    margin: 0px 10px 10px 10px;
+    border-bottom: 2px double white;
+}
+
+.top {
+    display: flex;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.bottom {
+    margin-top: -13px;
+    justify-content: center;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.tech-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: $tetriary-transparent;
+    padding: 10px;
+    height: 95px;
+    width: 105px;
+    
+    margin: 10px;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.tech-header {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+
+

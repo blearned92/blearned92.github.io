@@ -1,0 +1,22 @@
+@import "../../common/colors.scss";
+
+.portfolio {
+    display: grid;
+    grid-template-rows: 55px 1pfr;
+    margin: 3% 0;
+    background-color: $tetriary-transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.portfolio-h2 {
+    margin: 0px 10px 10px 10px;
+    border-bottom: 2px double white;
+}
+
+.project-container {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

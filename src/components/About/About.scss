@@ -1,0 +1,39 @@
+@import "../../common/colors.scss";
+
+.about {
+    display: grid;
+    grid-template: 55px 1fr / 5fr 3fr;
+    margin: 3% 0;
+    background-color: $tetriary-transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.about-h2 {
+    grid-column: span 2;
+    margin: 0px 10px 10px 10px;
+    border-bottom: 2px double white;
+}
+
+.left {
+    background-color: $tetriary-transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    opacity: 1;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 90%;
+        aspect-ratio: 1/1;
+        background-color: $tetriary-transparent;
+        border: 5px double white;
+        border-radius: 100%;
+    }
+}

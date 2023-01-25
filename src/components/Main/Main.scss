@@ -1,0 +1,23 @@
+@import "../../common/colors.scss";
+
+.main {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-left {
+    align-self: flex-start;
+    width: 750px;
+    @media(max-width: 750px){
+        width: 100%;
+        }}
+
+.main-right {
+    align-self: flex-end;
+    width: 750px;
+    @media(max-width: 750px){
+        width: 100%;
+        }
+    
+}

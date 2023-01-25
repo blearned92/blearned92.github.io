@@ -1,22 +1,21 @@
 import styled from "styled-components";
-
-const Container = styled.div`
-    height: 100%;
-    display: flex;
-    justify-content: center;
-`;
-
-const Title = styled.h1`
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-`;
+import "./About.scss"
+import {Texts} from "../../common/texts"
+import Sprite from '../../images/Sprite.png';
 
 const About = () => {
     return (
-        <Container>
-            <Title>About</Title>
-        </Container>
+        <section className="about">
+            <h2 className="about-h2">About me:</h2>
+            <aside className="left box">
+                {Texts.aboutMe}
+                <br/>---<br/>
+                {Texts.aboutMeExtended}
+            </aside>
+            <aside className="right box">
+                <img src={String(Sprite)}/>
+            </aside>
+        </section>
     )
 }
 

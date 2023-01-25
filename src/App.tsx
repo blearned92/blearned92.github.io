@@ -8,11 +8,20 @@ import { useState } from 'react';
 function App() {
 
   return (
-    <BrowserRouter>
-        {/* <NavBar/> */}
-        <AppRoutes/>
-        {/* <Footer/> */}
-    </BrowserRouter>
+    <>
+      <div className='header'>Header</div>
+      <div className='container'>
+        <aside className='app-left'></aside>
+        <aside className='app-middle'>
+          <BrowserRouter>
+              <AppRoutes/>
+          </BrowserRouter>
+        </aside>
+        <aside className='app-right'></aside>      
+      </div>
+    </>
+    
+    
   )
 }
 

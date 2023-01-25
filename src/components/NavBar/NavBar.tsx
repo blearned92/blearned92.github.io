@@ -5,6 +5,8 @@ import Banner from "../Banner/Banner";
 import {Color} from '../../common/colors';
 
 const Wrapper = styled.div`
+  height: 6vh;
+  border: 2px solid purple;
   // @media(max-width: 768px){
   //   display: flex;
   // }
@@ -85,15 +87,15 @@ const NavBar = () => {
     const navigate = useNavigate();
 
     return (
-      // <Wrapper>
-          <Container>
+      <Wrapper>
+          {/* <Container>
               <LeadItem onClick={() => {navigate("/")}}>Home</LeadItem>
               <MenuItem onClick={() => {navigate("/about")}}>About</MenuItem>
               <Title> <Banner/> </Title>
               <MenuItem onClick={() => {navigate("/portfolio")}}>Projects</MenuItem>
               <MenuItem>Skills</MenuItem>
-          </Container>          
-      // </Wrapper>
+          </Container>           */}
+      </Wrapper>
         
     );
     

@@ -1,4 +1,5 @@
 @import "./common/colors.scss";
+@import "./common/proportions.scss";
 
 * {
   margin: 0;
@@ -18,5 +19,28 @@ body {
 }
 
 .container {
-  margin: 0px 40px;
+  height: $body-height;
+  display: flex;
+  height: 100 vh;
+  margin-top: $header-height;
 }
+
+.app-left {
+  flex: $left-flex;
+}
+
+.app-middle {
+  flex: $middle-flex;
+}
+
+.app-right {
+  flex: $right-flex;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  border: 2px solid purple;
+  width: 100%;
+  height: $header-height;
+} 
