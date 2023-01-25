@@ -1,0 +1,44 @@
+@import "../../common/colors.scss";
+@import "../../common/proportions.scss";
+
+.logo {
+background-color: purple;
+height: 2.7rem;
+width: 2.7rem;
+border-radius: 100%;
+margin-right: .4rem;
+}
+
+/* Menu Links */ 
+.nav-link {
+    border-top: .1875rem solid rgba(33, 37, 41, 1);
+    letter-spacing: 0.6px;
+    &:hover { 
+        border-top: .1875rem solid $tetriary-color;
+    }
+
+    &:active { 
+        border-top: .1875rem solid $tetriary-color;
+    }
+
+    &:focus { 
+        border-top: .1875rem solid $tetriary-color;
+    }
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.dark {
+    background-color: rgba(33, 37, 41, 1) !important;
+    color: $font-primary !important;
+}
+
+.nav-head {
+    border-bottom: 2px solid $font-primary;
+}
+
+.offcanvas-header .btn-close {
+    background-color: $font-primary !important;
+}

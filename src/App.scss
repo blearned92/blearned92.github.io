@@ -18,25 +18,6 @@ body {
   background-color: $primary-color;
 }
 
-.container {
-  height: $body-height;
-  display: flex;
-  height: 100 vh;
-  margin-top: $header-height;
-}
-
-.app-left {
-  flex: $left-flex;
-}
-
-.app-middle {
-  flex: $middle-flex;
-}
-
-.app-right {
-  flex: $right-flex;
-}
-
 .header {
   position: fixed;
   top: 0;
