@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { ProjectsContext } from "../../context/Projects.context";
-import ProjectItem from "../../models/ProjectItem";
+import { ProjectsContext } from "../../../context/Projects.context";
+import ProjectItem from "../../../models/ProjectItem";
 
 const Project = styled.div`
     text-align: center;

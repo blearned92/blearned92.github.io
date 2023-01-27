@@ -1,5 +1,5 @@
 import "./Technologies.scss"
-import {Texts} from "../../common/texts"
+import {Texts} from "../../../common/texts"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { Icon } from '@iconify/react';

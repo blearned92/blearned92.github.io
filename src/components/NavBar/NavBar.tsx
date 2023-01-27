@@ -20,13 +20,13 @@ function NavBar() {
       <Navbar bg="dark" variant="dark" expand={expand} className="mb-3 fixed">
           <Container fluid>
             <Navbar.Brand className="title" href="#home">
-              <img
+              {/* <img
                 alt="logo"
                 src={Sprite}
                 width="30"
                 height="30"
                 className="d-inline-block align-middle logo"
-              />{' '}
+              />{' '} */}
               Brandon Learned
             </Navbar.Brand>
             <Navbar.Toggle><FontAwesomeIcon icon={faBars}/></Navbar.Toggle>

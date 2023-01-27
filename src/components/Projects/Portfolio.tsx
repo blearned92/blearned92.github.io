@@ -2,7 +2,7 @@ import "./Portfolio.scss"
 import { ProjectsContext } from "../../context/Projects.context";
 import {Texts} from "../../common/texts"
 import { useContext } from "react";
-import Project from "../Project/Project";
+import Project from "./Project/Project";
 
 const Projects = () => {
 

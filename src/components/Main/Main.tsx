@@ -1,16 +1,16 @@
 import React from 'react';
 import About from "../About/About";
-import Technologies from '../Technologies/Technologies';
+import Technologies from '../About/Technologies/Technologies';
 import "../Main/Main.scss";
 import Projects from '../Projects/Portfolio';
+import Header from '../Header/Header';
 
 
 const Main = () => {
 
     return (
         <div className='main'>
-            {/* <h2>Intro Hook</h2> */}
-            <aside className='main-left'>
+            {/* <aside className='main-left'>
                 <About/>
             </aside>
             <aside className='main-right'>
@@ -22,7 +22,7 @@ const Main = () => {
             <aside className='main-right'>
                 Contact
             </aside>
-            Footer (github, linkedin, resume)
+            Footer (github, linkedin, resume) */}
         </div>
     )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "../components/About/About";
 import Main from "../components/Main/Main";
-import Portfolio from "../components/Project/Project";
+import Portfolio from "../components/Projects/Project/Project";
 
 export const AppRoutes: React.FC<unknown> = () => (
     <Routes>

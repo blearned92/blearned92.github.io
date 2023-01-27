@@ -1,0 +1,39 @@
+@import "../../common/colors.scss";
+@import "../../common/proportions.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:wght@300&display=swap');
+
+.header-wrapper {
+    // background: url() no-repeat;
+    margin-top: 82px;
+    background-size: cover;
+    background-position: center;
+    // height: calc(100vh - 82px);
+    color: $font-primary;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    h1 {
+        font-family: 'Noto Serif', serif;
+        text-transform: uppercase;
+    }
+}
+
+.typed-text {
+    font-size: 2rem;
+    color: $font-primary;
+    font-family: 'Noto Serif', serif;
+
+}
+
+.breakpoint {
+    background-image: linear-gradient($tetriary-color, $primary-color);
+    width: 100%;
+    height: 50px;
+    padding-top: 200px;
+}
