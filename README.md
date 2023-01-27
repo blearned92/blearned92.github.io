@@ -44,3 +44,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+<a href="https://www.freepik.com/free-vector/abstract-black-texture-background-hexagon_18702139.htm#query=black%20hexagon&position=2&from_view=keyword">Image by almumtazza</a> on Freepik
