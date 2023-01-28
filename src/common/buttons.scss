@@ -1,0 +1,61 @@
+@import "./colors.scss";
+@import "./proportions.scss";
+
+.btn-primary {
+    border-color: $secondary-color;
+    background-color: $tetriary-color;
+    --bs-btn-active-bg: #6237a0 !important;
+    --bs-btn-active-border-color: #6237a0 !important;
+    &:hover { 
+        border-color: $hover-color;
+        background-color: $hover-color;
+    }
+
+    &:active { 
+        border-color: $hover-color;
+        background-color: $hover-color;
+    }
+
+    // &:focus { 
+    //     border-color: $hover-color;
+    //     background-color: $hover-color;
+    // }
+}
+
+.hide {
+    margin-top: 10px;
+   @media screen and (min-width: 768px) {
+    display: none;
+   } 
+}
+
+.project {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume {
+    background-color: $tetriary-color;
+    border-radius: 7px;
+    color: $font-primary;
+    border-top: .1875rem solid $primary-color;
+    letter-spacing: 0.6px;
+    width: 100px;
+    &:hover { 
+        border-top: .1875rem solid $primary-color;
+        background-color: $hover-color;
+    }
+    &:active { 
+        border-top: .1875rem solid $primary-color;
+        background-color: $tetriary-color;
+    }
+    &:focus { 
+        border-top: .1875rem solid $primary-color;
+    }
+    @media screen and (max-width: 767px) {
+        margin: auto;
+    }
+}

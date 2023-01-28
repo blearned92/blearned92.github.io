@@ -1,20 +1,32 @@
-import styled from "styled-components";
-import "./About.scss"
-import {Texts} from "../../common/texts"
-import Sprite from '../../images/Sprite.png';
+import Button from "react-bootstrap/esm/Button";
+import "./About.scss";
+import Technologies from "./Technologies/Technologies";
 
 const About = () => {
     return (
-        <section className="about" id="about-me">
-            <h2 className="about-h2">About me:</h2>
-            <aside className="left box">
-                {Texts.aboutMe}
-                <br/>---<br/>
-                {Texts.aboutMeExtended}
+        <section className="about-wrapper" id="about-me">
+            <aside className="background-left">
             </aside>
-            <aside className="right box">
-                <img src={String(Sprite)}/>
+            <aside className="background-right">
             </aside>
+            <section className="about-info">
+                <h1>About Me</h1>
+                <div className="underline-decoration"></div>
+                <div className="content-box">
+                    <div className="about-left">
+                        <p>
+                            My name is Brandon and I am a <strong>Full-stack Web Developer </strong> based out 
+                            of the <strong>Northern Colorado Area</strong>. My passions are creating 
+                            and assisting others to meet their needs!
+                        </p>
+                        <Button href="#contact-me">Contact Me</Button>
+                    </div>
+                    <div className="about-right">
+                        <Technologies/>
+                    </div>
+                    
+                </div>
+            </section>
         </section>
     )
 }

@@ -1,39 +1,98 @@
 @import "../../common/colors.scss";
+@import "../../common/proportions.scss";
+@import "../../common/buttons.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:wght@300&display=swap');
 
-.about {
-    display: grid;
-    grid-template: 55px 1fr / 5fr 3fr;
-    margin: 3% 0;
-    background-color: $tetriary-transparent;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.about-h2 {
-    grid-column: span 2;
-    margin: 0px 10px 10px 10px;
-    border-bottom: 2px double white;
-}
-
-.left {
-    background-color: $tetriary-transparent;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 10px 20px;
-    opacity: 1;
-}
-
-.right {
+.about-wrapper {
+    height: calc(100vh - 82px);
+    color: $font-primary;
     display: flex;
     justify-content: center;
     align-items: center;
-    img {
-        width: 90%;
-        aspect-ratio: 1/1;
-        background-color: $tetriary-transparent;
-        border: 5px double white;
-        border-radius: 100%;
+    text-align: center;
+    opacity:0.8;
+    box-shadow: 0 0 300px 180px black inset;
+    @media screen and (max-width: 767px) {
+        box-shadow: 0 0 150px 90px black inset;
     }
+}
+
+.background-left, 
+.background-right {
+    background: url("../../images/Hexagon.jpg") no-repeat;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 100px 0px 300px 150px black inset;
+    @media screen and (max-width: 767px) {
+        box-shadow: 100px 0px 200px 30px black inset;
+    }
+}
+
+.background-left {
+    box-shadow: -100px 0px 300px 150px black inset;
+    @media screen and (max-width: 767px) {
+        box-shadow: -100px 0px 200px 30px black inset;
+    }
+}
+
+.about-info {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    // align-items: center;
+    text-align: center;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    h1 {
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: center;
+        @media screen and (max-width: 767px) {
+            font-size: 48px;
+        }
+        @media screen and (max-width: 420px) {
+            font-size: 36px;
+        }
+    }
+    p {
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 420px) {
+            font-size: 12px;
+        } 
+    }
+}
+
+.underline-decoration {
+    margin: 15px auto 20px auto;
+    background-color: $tetriary-color;
+    height: 5px;
+    border-radius: 20px 2px 20px 2px;
+    width: 150px;
+    // @media screen and (max-width: 767px) {
+    //     box-shadow: -100px 0px 200px 30px black inset;
+    // }
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+        
+    }
+}
+
+.about-left,
+.about-right {
+    max-width: 500px;
+    padding: 15px;
 }

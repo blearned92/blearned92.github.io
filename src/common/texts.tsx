@@ -4,9 +4,6 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 
 export let Texts = {
-    aboutMe: 
-    "My name is Brandon, and I am a Full Stack Developer who loves to tinker, build, and learn in the realm of Software! ",
-    aboutMeExtended: "I enjoy Web Development, and am consistently pushing myself to expand my understandings of the many technologies at my disposal to create useful tools.",
     technologies: "Here are a list of the technologies I have been working with most recently:",
     technologyStack: [
         ['Java', faJava, "fa"],
