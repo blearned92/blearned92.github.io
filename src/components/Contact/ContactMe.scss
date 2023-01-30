@@ -3,20 +3,6 @@
 @import "../../common/buttons.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:wght@300&display=swap');
 
-.contact-me-wrapper {
-    height: calc(100vh - 120px);
-    color: $font-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity:0.8;
-    box-shadow: 0 0 300px 180px black inset;
-    @media screen and (max-width: 767px) {
-        box-shadow: 0 0 150px 90px black inset;
-    }
-}
-
 .background-left, 
 .background-right {
     background: url("../../images/Hexagon.jpg") no-repeat;
@@ -37,6 +23,20 @@
     }
 }
 
+.contact-me-wrapper {
+    height: calc(100vh - 120px);
+    color: $font-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity:0.8;
+    box-shadow: 0 0 300px 180px black inset;
+    @media screen and (max-width: 767px) {
+        box-shadow: 0 0 150px 90px black inset;
+    }
+}
+
 .contact-me-info {
     position: absolute;
     height: inherit;
@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column; 
     justify-content: center;
-    // align-items: center;
     text-align: center;
     opacity: 1 !important;
     z-index: 1 !important;
@@ -60,32 +59,52 @@
             font-size: 36px;
         }
     }
-    p {
-        @media screen and (max-width: 767px) {
-            font-size: 16px;
-        }
-        @media screen and (max-width: 420px) {
-            font-size: 12px;
-        } 
-    }
 }
 
 .content-box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 767px) {
-        
+    padding: 20px;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px 15px 15px;
+    label {
+        text-align: left;
+        padding-left: 10px;
+    }
+    input {
+        padding: 0 10px;
+        border-radius: 10px;
+    }
+    .form-right {
+        textarea {
+            height: 80px;
+            width: 210px;
+            padding: 10px;
+            border-radius: 10px;
+            resize: none;
+            @media screen and (min-width: 767px) {
+                width: 500px;
+            }
+        }
     }
 }
 
-.about-left,
-.about-right {
-    max-width: 500px;
-    padding: 15px;
-    @media screen and (max-width: 915px) and (max-height: 550px) {
-        padding: 0;
-    }
+.form-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: flex-end;
+}
 
+.form-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: flex-end;
 }
