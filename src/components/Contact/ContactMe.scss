@@ -3,8 +3,8 @@
 @import "../../common/buttons.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:wght@300&display=swap');
 
-.about-wrapper {
-    height: calc(100vh - 82px);
+.contact-me-wrapper {
+    height: calc(100vh - 120px);
     color: $font-primary;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@
     }
 }
 
-.about-info {
+.contact-me-info {
     position: absolute;
     height: inherit;
     width: 100%;

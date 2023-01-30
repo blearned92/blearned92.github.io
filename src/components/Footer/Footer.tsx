@@ -4,12 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Wrapper = styled.div`
-    background-color: ;
-    position: fixed;
+    background-color: purple;
     display: flex;
-    bottom: 0;
     width: 100%;
-    height: 6%;
+    height: 42px;
     justify-content: right;
     align-items: center;
 `;

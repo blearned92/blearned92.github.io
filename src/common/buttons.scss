@@ -4,6 +4,7 @@
 .btn-primary {
     border-color: $secondary-color;
     background-color: $tetriary-color;
+    margin: 0 auto;
     --bs-btn-active-bg: #6237a0 !important;
     --bs-btn-active-border-color: #6237a0 !important;
     &:hover { 
@@ -57,5 +58,11 @@
     }
     @media screen and (max-width: 767px) {
         margin: auto;
+    }
+} 
+
+.about-contact-me {
+    @media screen and (max-width: 915px) and (max-height: 550px) {
+        display: none;
     }
 }

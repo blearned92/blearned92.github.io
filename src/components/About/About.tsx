@@ -19,13 +19,12 @@ const About = () => {
                             of the <strong>Northern Colorado Area</strong>. My passions are creating 
                             and assisting others to meet their needs!
                         </p>
-                        <Button href="#contact-me">Contact Me</Button>
                     </div>
                     <div className="about-right">
                         <Technologies/>
-                    </div>
-                    
+                    </div>   
                 </div>
+                <Button className="about-contact-me" href="#contact-me">Contact Me</Button>
             </section>
         </section>
     )

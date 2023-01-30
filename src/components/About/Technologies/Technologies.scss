@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     list-style-type: none;
     margin-left: -25px;
+    // @media screen and (max-height: 767px) {
+    //     flex-wrap: nowrap;
+    // }
+    
 }
 
 .tech-list-item {
@@ -26,7 +30,18 @@
         aspect-ratio: 1/1;
     }
 
-    filter: drop-shadow(3px 4px 2px $tetriary-color);
+    filter: drop-shadow(3px 5px 2px $tetriary-color);
+
+    @media screen and (max-width: 915px) and (max-height: 550px) {
+        font-size: 30%;
+        margin: 5px;
+        .icon {
+            display: none;
+        }
+        .faicon {
+            display: none;
+        }
+    }
 }
 
 .tech-header {

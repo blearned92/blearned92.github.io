@@ -1,6 +1,5 @@
-import "./Portfolio.scss"
+import "./Projects.scss"
 import { ProjectsContext } from "../../context/Projects.context";
-import {Texts} from "../../common/texts"
 import { useContext } from "react";
 import Project from "./Project/Project";
 
@@ -10,9 +9,13 @@ const Projects = () => {
 
 
     return(
-        <section className="portfolio" id="projects">
-            <h2 className="portfolio-h2">Projects:</h2>
-            <div className="project-container">
+        <section className="projects-wrapper" id="projects">
+            <section className="projects-info">
+                <h1>Projects</h1>
+                <div className="underline-decoration"></div>
+                <p><b>Sorry, this area is still under construction!</b></p>
+            </section>
+            {/* <div className="project-container">
                 {
                     Projects.map((item)=>{
                         return(<Project 
@@ -22,7 +25,7 @@ const Projects = () => {
                             imageLink={item.imageLink}/>)
                     })
                 }
-            </div>
+            </div> */}
 
              
         </section>

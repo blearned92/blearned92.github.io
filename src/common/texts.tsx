@@ -1,10 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJava, faReact, faHtml5, faCss3, faJs, faGit } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-
+import { faJava, faReact, faHtml5, faCss3, faJs } from '@fortawesome/free-brands-svg-icons';
 
 export let Texts = {
-    technologies: "Here are a list of the technologies I have been working with most recently:",
     technologyStack: [
         ['Java', faJava, "fa"],
         ['Spring', "bxl:spring-boot", "i"],

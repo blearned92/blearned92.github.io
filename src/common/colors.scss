@@ -6,4 +6,10 @@ $font-secondary: rgba(255, 255, 255, 0.55);
 $hover-color: #590a8b;
 $tetriary-transparent: rgb(89, 10, 91, 0.5);
 
-// #590a5b;
+.underline-decoration {
+    margin: 15px auto 20px auto;
+    background-color: $tetriary-color;
+    height: 5px;
+    border-radius: 20px 2px 20px 2px;
+    width: 150px;
+}
