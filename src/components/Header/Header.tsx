@@ -14,7 +14,7 @@ const Header = () => {
                 <h1>Brandon Learned</h1>
                 <h2>Full-Stack Web Developer</h2>
                 <Button className="project" href="#projects">Projects</Button>
-                <Button className="hide" href="#resume">Resume</Button>
+                <Button className="hide" href="resume.pdf">Resume</Button>
             </section>
             <ul className="side">
                 <li><FontAwesomeIcon icon={faLinkedin} onClick={() => window.open("https://www.linkedin.com/in/brandon-learned/")}/></li>

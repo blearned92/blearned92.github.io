@@ -9,6 +9,7 @@ import "./NavBar.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function NavBar() {
   let expand = "md";
   
@@ -35,7 +36,7 @@ function NavBar() {
                   <Nav.Link href="#about-me">About Me</Nav.Link>
                   <Nav.Link href="#projects">Projects</Nav.Link>
                   <Nav.Link href="#contact-me">Contact Me</Nav.Link>
-                  <Nav.Link className='resume' href="#resume">Resume</Nav.Link>
+                  <Nav.Link className='resume' href='resume.pdf'>Resume</Nav.Link>
                   </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
