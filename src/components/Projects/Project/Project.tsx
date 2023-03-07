@@ -1,58 +1,34 @@
-import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
-import { ProjectsContext } from "../../../context/Projects.context";
+import React from "react";
 import ProjectItem from "../../../models/ProjectItem";
-
-const Project = styled.div`
-    text-align: center;
-    cursor: pointer;
-    width: 200px;
-    height: 200px;
-    color: white;
-    border: 2px solid white;
-    margin: 2%;
-    &:hover {
-        border-color: #3b035e;
-    }
-    &:active {
-        width: 195px;
-        height: 195px;
-    }
-`;
-
-const ProjectTitle = styled.h2`
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-    &:hover {
-        color: gray;
-    }
-`;
-
-const ProjectImage = styled.img`
-    width: 5rem;
-    border-radius: 100%;
-    background-color: purple;
-`;
-
-const ProjectLink = styled.p`
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-    &:hover {
-        color: gray;
-    }
-`;
+import "./project.scss";
 
 const Portfolio = (ProjectItem:ProjectItem) => {
     
     return (
-        <Project>
-            <ProjectTitle onClick={() => window.location.href=String(ProjectItem.titleLink)}>{ProjectItem.title}</ProjectTitle>
-            <ProjectImage src={String(ProjectItem.imageLink)} onClick={() => window.location.href=String(ProjectItem.titleLink)}/>
-            <ProjectLink onClick={() => window.open(String(ProjectItem.githubLink))}>Check Out The GitHub!</ProjectLink>
-        </Project>
+        <div className="project-item">
+            <h2 className="project-title" onClick={() => window.open(String(ProjectItem.titleLink))}>{ProjectItem.title}</h2>
+            <section className="project-sides">
+                <div className="project-left">
+                    <img  className="project-image" src={String(ProjectItem.imageLink)} onClick={() => window.open(String(ProjectItem.titleLink))}/>
+                </div>
+                <div className="project-right">
+                    <h3>About Project:</h3>
+                    <p className="project-right-description">{ProjectItem.description}</p>
+                    <h3>Technologies Used:</h3>
+                    <ul className="project-right-technologies">
+                        {
+                            ProjectItem.technologies.map((technology)=>{
+                                return(<li>{technology}</li>)
+                            })
+                        }
+                    </ul>
+                    <footer className="project-right-footer">
+                        <p onClick={() => window.open(String(ProjectItem.titleLink))}>Visit the Site</p>
+                        <p className="project-github" onClick={() => window.open(String(ProjectItem.githubLink))}>Visit the GitHub</p>
+                    </footer>
+                </div>
+            </section>
+        </div>
     )
 }
 

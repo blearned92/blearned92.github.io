@@ -1,0 +1,113 @@
+@import "../../../common/colors.scss";
+
+.project-item {
+    margin: 10px;
+    filter: drop-shadow(3px 5px 2px $tetriary-color);
+}
+
+.project-title {
+    text-decoration: underline;
+    &:hover { 
+        cursor: pointer;
+        text-decoration: underline $tetriary-color;
+    }
+    &:active { 
+        font-size: 31px;
+    }
+}
+
+.project-sides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-left {
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    background-color: $tetriary-color;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    &:hover { 
+        cursor: pointer;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        margin: 1px 0 0 1px;
+    }
+    &:active { 
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        margin: 2px 0 0 2px;
+    }
+}
+
+.project-right {
+    background-color: $primary-color;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+}
+
+.project-right h3{
+    filter: drop-shadow(3px 5px 2px $tetriary-color);
+    margin: 8px 0;
+    font-size: 22px;
+    @media screen and (max-width: 440px) {
+        font-size: 20px;
+    }
+}
+
+.project-right p{
+    margin: 10px 0;
+}
+
+.project-right-technologies {
+    height: 80px;
+    background-color: $tetriary-color;
+    margin: 0 10px;
+    padding: 2px 35px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.project-right-description {
+    margin: 0 10px !important;
+    text-align: justify;
+    font-size: 14px;
+    @media screen and (max-width: 400px) {
+        font-size: 13px;
+    }
+}
+
+.project-right-footer {
+    // height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.project-right-footer p{
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0;
+    &:hover { 
+        cursor: pointer;
+        text-decoration: underline $tetriary-color;
+    }
+
+    &:active { 
+        color: $tetriary-color;
+    }
+}
+
+
+
