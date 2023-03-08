@@ -8,6 +8,9 @@
     list-style-type: none;
     margin-left: -25px;    
     margin-bottom: -10px;
+    @media screen and (max-width: 915px) and (max-height: 550px) {
+        margin-top: 20px;
+    }
 }
 
 .tech-list-item {

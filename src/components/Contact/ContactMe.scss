@@ -10,14 +10,14 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    box-shadow: 100px 0px 300px 150px black inset;
+    box-shadow: 100px 0px 300px 220px black inset;
     @media screen and (max-width: 767px) {
         box-shadow: 100px 0px 200px 30px black inset;
     }
 }
 
 .background-left {
-    box-shadow: -100px 0px 300px 150px black inset;
+    box-shadow: -100px 0px 300px 220px black inset;
     @media screen and (max-width: 767px) {
         box-shadow: -100px 0px 200px 30px black inset;
     }
