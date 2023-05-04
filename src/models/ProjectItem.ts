@@ -5,5 +5,6 @@ export default interface ProjectItem {
     description: String;
     titleLink: String;
     imageLink: String;
-    githubLink: String;
+    frontEndGithub: String;
+    backEndGithub: String
 }

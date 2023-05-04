@@ -4,34 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:wght@300&display=swap');
 
 .header-wrapper {
-    margin-top: 82px;
-    height: calc(100vh - 82px);
     color: $font-primary;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url("../../images/Hexagon.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
     margin-top: 82px;
     height: calc(100vh - 82px);
-    opacity:0.8;
-    box-shadow: 0 0 300px 280px black inset;
-    @media screen and (max-width: 767px) {
-        // height: calc(100vh - 50px);
-        box-shadow: 0 0 150px 90px black inset;
-    }
-}
-
-.background {
-    background: url("../../images/Hexagon.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 82px;
-    height: calc(100vh - 82px);
-    opacity:0.4;
 }
 
 .main-info {

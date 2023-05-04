@@ -79,6 +79,10 @@
     flex-wrap: wrap;
 }
 
+.project-right-technologies li{
+    margin-right: 30px;
+}
+
 .project-right-description {
     margin: 0 10px !important;
     text-align: justify;
@@ -89,7 +93,6 @@
 }
 
 .project-right-footer {
-    // height: 20%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -97,8 +100,8 @@
 
 .project-right-footer p{
     text-decoration: underline;
-    padding: 10px;
-    margin: 0;
+    padding: 6px;
+    font-size: 14px;
     &:hover { 
         cursor: pointer;
         text-decoration: underline $tetriary-color;

@@ -3,26 +3,6 @@
 @import "../../common/buttons.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:wght@300&display=swap');
 
-.background-left, 
-.background-right {
-    background: url("../../images/Hexagon.jpg") no-repeat;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 100px 0px 300px 220px black inset;
-    @media screen and (max-width: 767px) {
-        box-shadow: 100px 0px 200px 30px black inset;
-    }
-}
-
-.background-left {
-    box-shadow: -100px 0px 300px 220px black inset;
-    @media screen and (max-width: 767px) {
-        box-shadow: -100px 0px 200px 30px black inset;
-    }
-}
-
 .contact-me-wrapper {
     height: calc(100vh - 120px);
     color: $font-primary;
@@ -30,11 +10,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    opacity:0.8;
-    box-shadow: 0 0 300px 180px black inset;
-    @media screen and (max-width: 767px) {
-        box-shadow: 0 0 150px 90px black inset;
-    }
 }
 
 .contact-me-info {

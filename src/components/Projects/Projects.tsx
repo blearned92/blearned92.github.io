@@ -21,7 +21,8 @@ const Projects = () => {
                         technologies={item.technologies}
                         description = {item.description}
                         titleLink={item.titleLink}
-                        githubLink={item.githubLink}
+                        frontEndGithub={item.frontEndGithub}
+                        backEndGithub={item.backEndGithub}
                         imageLink={item.imageLink}/>)
                     })
                 }

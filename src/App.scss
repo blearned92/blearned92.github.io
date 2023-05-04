@@ -1,6 +1,7 @@
 @import "./common/colors.scss";
 @import "./common/proportions.scss";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +17,17 @@ a {
 body {
   background: $font-primary;
   background-color: $primary-color;
+}
+
+.background {
+  background: url("./images/Hexagon.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 82px);
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 300px 180px black inset;
+  @media screen and (max-width: 767px) {
+    box-shadow: 0 0 150px 140px black inset;
+  }
 }

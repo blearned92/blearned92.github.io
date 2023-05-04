@@ -11,15 +11,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url("../../images/Hexagon.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity:0.8;
-    box-shadow: 0 0 300px 280px black inset;
-    @media screen and (max-width: 767px) {
-        // height: calc(100vh - 50px);
-        box-shadow: 0 0 150px 90px black inset;
-    }
+    min-height: 100vh;
 }
 
 .projects-info {

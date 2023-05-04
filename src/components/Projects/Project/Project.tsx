@@ -23,8 +23,14 @@ const Portfolio = (ProjectItem:ProjectItem) => {
                         }
                     </ul>
                     <footer className="project-right-footer">
-                        <p onClick={() => window.open(String(ProjectItem.titleLink))}>Visit the Site</p>
-                        <p className="project-github" onClick={() => window.open(String(ProjectItem.githubLink))}>Visit the GitHub</p>
+                        <p onClick={() => window.open(String(ProjectItem.titleLink))}>Demo</p>
+                        {ProjectItem.backEndGithub ? 
+                            <>
+                            <p className="project-github" onClick={() => window.open(String(ProjectItem.frontEndGithub))}>Frontend Github</p>
+                            <p className="project-github" onClick={() => window.open(String(ProjectItem.backEndGithub))}>Backend Github</p>
+                            </> :
+                            <p className="project-github" onClick={() => window.open(String(ProjectItem.frontEndGithub))}>GitHub</p>
+                        }
                     </footer>
                 </div>
             </section>

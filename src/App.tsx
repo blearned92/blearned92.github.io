@@ -10,13 +10,14 @@ function App() {
 
   return (
     <>
-      <NavBar/>
-      <Header/>
-      <About/>
-      <Projects/>
-      <ContactMe/>
-      <Footer/>
-    </>  
+    <div className='background'/>
+    <NavBar/>
+    <Header/>
+    <About/>
+    <Projects/>
+    <ContactMe/>
+    <Footer/>
+    </>
   )
 }
 

@@ -4,38 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:wght@300&display=swap');
 
 .about-wrapper {
-    height: calc(100vh - 82px);
+    height: 100vh;
     color: $font-primary;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    opacity:0.8;
-    box-shadow: 0 0 300px 300px black inset;
-    @media screen and (max-width: 767px) {
-        box-shadow: 0 0 150px 90px black inset;
-    }
 }
-
-// .background-left, 
-// .background-right {
-//     background: url("../../images/Hexagon.jpg") no-repeat;
-//     width: 50%;
-//     height: 100%;
-//     background-size: cover;
-//     background-position: center;
-//     box-shadow: 100px 0px 300px 30px black inset;
-//     @media screen and (max-width: 767px) {
-//         box-shadow: 100px 0px 300px 30px black inset;
-//     }
-// }
-
-// .background-left {
-//     box-shadow: -100px 0px 300px 150px black inset;
-//     @media screen and (max-width: 767px) {
-//         box-shadow: -100px 0px 200px 30px black inset;
-//     }
-// }
 
 .about-info {
     position: absolute;
@@ -44,7 +19,6 @@
     display: flex;
     flex-direction: column; 
     justify-content: center;
-    // align-items: center;
     text-align: center;
     opacity: 1 !important;
     z-index: 1 !important;
