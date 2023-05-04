@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ad810a7.css",
-    "main.js": "/static/js/main.8998af69.js",
+    "main.css": "/static/css/main.137140ea.css",
+    "main.js": "/static/js/main.ba25a2d7.js",
     "static/js/787.64001a95.chunk.js": "/static/js/787.64001a95.chunk.js",
     "static/media/Hexagon.jpg": "/static/media/Hexagon.c997cb09b4d2a4c8acdc.jpg",
+    "static/media/mangomovies-project.png": "/static/media/mangomovies-project.5e4afcc0d8e4b3f25bf6.png",
     "static/media/reddit-project.jpg": "/static/media/reddit-project.4ef55a0eedaf107e8fd6.jpg",
     "index.html": "/index.html",
-    "main.9ad810a7.css.map": "/static/css/main.9ad810a7.css.map",
-    "main.8998af69.js.map": "/static/js/main.8998af69.js.map",
+    "main.137140ea.css.map": "/static/css/main.137140ea.css.map",
+    "main.ba25a2d7.js.map": "/static/js/main.ba25a2d7.js.map",
     "787.64001a95.chunk.js.map": "/static/js/787.64001a95.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ad810a7.css",
-    "static/js/main.8998af69.js"
+    "static/css/main.137140ea.css",
+    "static/js/main.ba25a2d7.js"
   ]
 }
